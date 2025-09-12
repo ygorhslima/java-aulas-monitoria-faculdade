@@ -1,0 +1,52 @@
+
+Exercício – Sistema de Veículos
+ 
+Você deve desenvolver um sistema para representar veículos em uma locadora. O objetivo é aplicar os conceitos de herança, polimorfismo e encapsulamento.
+ 
+Requisitos:
+ 
+Classe Base – Veiculo
+ 
+Crie uma classe Veiculo com os seguintes atributos privados:
+ 
+marca (String)
+ 
+modelo (String)
+ 
+ano (int)
+ 
+Crie métodos públicos (getters e setters) para manipular esses atributos.
+ 
+Implemente um método calcularDiaria() que retornará o valor da diária do veículo (será sobrescrito pelas subclasses).
+ 
+Implemente o método toString() para exibir as informações do veículo.
+ 
+Classes Derivadas – Herança e Polimorfismo
+ 
+Crie subclasses específicas:
+ 
+Carro
+ 
+Moto
+ 
+Caminhao
+ 
+Cada subclasse deve sobrescrever o método calcularDiaria() com regras próprias:
+ 
+Carro → diária base de R$100
+ 
+Moto → diária base de R$50
+ 
+Caminhão → diária base de R$200
+ 
+Encapsulamento
+ 
+Os atributos da classe Veiculo devem ser privados e acessados apenas via getters/setters.
+ 
+Teste do Sistema – Polimorfismo em Ação
+ 
+Na classe principal (main), crie uma lista de veículos com diferentes tipos (Carro, Moto, Caminhao).
+ 
+Percorra a lista e exiba o modelo de cada veículo junto com o valor de sua diária.
+ 
+Observe como o mesmo método (calcularDiaria()) se comporta de formas diferentes dependendo do objeto.
